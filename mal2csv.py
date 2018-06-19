@@ -2,7 +2,7 @@
 # Created by srgovindan, 19 June 2018
 import xml.etree.ElementTree as ET 
 import csv
-print('\nProgram started.')
+print('\nScript started.')
 
 # Anime List 
 print('Converting MAL Anime List.')
