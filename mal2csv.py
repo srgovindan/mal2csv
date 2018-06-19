@@ -20,7 +20,6 @@ csvwriter = csv.writer(animeList,'excel')
 list_head = []
 print('Created CSV writer.\n')
 # find and convert XML data to CSV
-count = 0
 for member in root.findall('anime'):
 	# create a temp variable to store data for each row
 	anime = []
@@ -77,7 +76,6 @@ csvwriter = csv.writer(mangaList,'excel')
 list_head = []
 print('Created CSV writer.\n')
 # find and convert XML data to CSV
-count = 0
 for member in root.findall('manga'):
 	# create a temp variable to store data for each row
 	manga = []
