@@ -12,7 +12,7 @@ tree = ET.parse(filename)
 root = tree.getroot()
 print('Got XML file.')
 # open a file for writing on the desktop
-path = raw_input('Please enter the file path of the export file in the format, .../animelist.csv :')
+path = input('Please enter the file path of the export file in the format, .../animelist.csv :')
 animeList = open(path, 'w')
 print('Opened file for writing.')
 # create the csv writer object
@@ -68,7 +68,7 @@ tree = ET.parse(filename)
 root = tree.getroot()
 print('Got XML file.')
 # open a file for writing on the desktop
-path = raw_input('Please enter the file path of the export file in the format, .../mangalist.csv :')
+path = input('Please enter the file path of the export file in the format, .../mangalist.csv :')
 mangaList = open(path, 'w')
 print('Opened file for writing.')
 # create the csv writer object
