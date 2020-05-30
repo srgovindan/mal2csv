@@ -13,7 +13,7 @@ root = tree.getroot()
 print('Got XML file.')
 # open a file for writing on the desktop
 path = input('Please enter the file path of the export file in the format, .../animelist.csv :')
-animeList = open(path, 'w')
+animeList = open(path, 'w', encoding='utf-8')
 print('Opened file for writing.')
 # create the csv writer object
 csvwriter = csv.writer(animeList,'excel')
@@ -29,7 +29,6 @@ for member in root.findall('anime'):
 
 	# scrub other data from xml
 	title = member.find('series_title').text
-	title = title.encode('ascii','ignore')
 	anime.append(title)
 
 	mediaType = member.find('series_type').text
@@ -69,7 +68,7 @@ root = tree.getroot()
 print('Got XML file.')
 # open a file for writing on the desktop
 path = input('Please enter the file path of the export file in the format, .../mangalist.csv :')
-mangaList = open(path, 'w')
+mangaList = open(path, 'w', encoding='utf-8')
 print('Opened file for writing.')
 # create the csv writer object
 csvwriter = csv.writer(mangaList,'excel')
@@ -85,7 +84,6 @@ for member in root.findall('manga'):
 
 	# scrub other data from xml
 	title = member.find('manga_title').text
-	title = title.encode('ascii','ignore')
 	manga.append(title)
 
 	status = member.find('my_status').text
